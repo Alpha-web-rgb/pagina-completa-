@@ -46,20 +46,23 @@ Google Fonts (Poppins)
 
 Inicio
 
-![Pagina principal](image-1.png)
+![Pagina principal](img/image-1.png)
 
 Modo Oscuro
 
-![Modo Oscuro ](image-5.png)
+![Modo Oscuro ](img/image-5.png)
 
 Productos
 
-![productos](image-2.png)
+![productos](img/image-2.png)
 
 Quienes Somos
 
-![Quienes Somos](image-3.png)
+![Quienes Somos](img/image-3.png)
 
 Contacto
 
-![contacto](image-4.png)
+![contacto](img/image-4.png)
+
+
+✨ Desarrollado con pasión por la tecnología - Lahcen
