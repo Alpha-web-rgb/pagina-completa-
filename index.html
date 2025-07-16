@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Componentes de PC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="Footer.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="processor-icon">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+            <p>Cargando componentes...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-microchip"></i>
+                <h1>TechShop</h1>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar componentes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="cart-icon">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="theme-toggle">
+                        <button id="theme-switcher">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Construye tu PC ideal</h2>
+                <p>Los mejores componentes al mejor precio</p>
+                <a href="#products" class="cta-button">Explorar Productos</a>
+            </div>
+            <div class="hero-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Filtros de Categoría -->
+        <section class="category-filters">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="motherboard">Placas Base</button>
+                <button class="filter-btn" data-category="cpu">Procesadores</button>
+                <button class="filter-btn" data-category="ram">Memoria RAM</button>
+                <button class="filter-btn" data-category="gpu">Tarjetas Gráficas</button>
+                <button class="filter-btn" data-category="storage">Almacenamiento</button>
+                <button class="filter-btn" data-category="case">Cajas</button>
+                <button class="filter-btn" data-category="cooling">Refrigeración</button>
+                <button class="filter-btn" data-category="peripherals">Periféricos</button>
+            </div>
+        </section>
+
+        <!-- Lista de Productos -->
+        <section id="products" class="product-list">
+            <!-- Las tarjetas de producto se generarán aquí -->
+        </section>
+
+        <!-- Carrito Flotante -->
+        <div class="floating-cart">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items">
+                <!-- Los items del carrito aparecerán aquí -->
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="total">
+                    <span>Total:</span>
+                    <span class="total-amount">0€</span>
+                </div>
+                <button class="checkout-btn">Proceder al Pago</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> TechShop@equipos.com</li>
+                    <li><i class="fas fa-phone"></i> +34 123 456 789</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Calle Gral. Concha, 3, Bajo, Abando, 48008 Bilbao, Biscay
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Todos los derechos reservados
+            </div>
+    </footer>
+
+
+    <!-- Notificación de producto añadido -->
+    <div class="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span>Producto añadido al carrito</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
